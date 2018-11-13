@@ -1,0 +1,85 @@
+.team
+	background-color: $darkGray
+	padding: 84px 0
+	&__inner
+		max-width: 860px
+		padding: 0 30px 
+		margin: 0 auto
+		text-align: center
+	&__title
+		line-height: 1.2
+	&__subtitle
+		margin-bottom: 75px
+	&__text
+		font-size: 20px
+		color: $cornflowerBlue
+		max-width: 628px
+		margin: 0 auto 
+
+.members
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	margin: 0 -25px
+	margin-bottom: 25px
+	transform:  scale(0.5)
+	transition: transform 0.5s
+	&.open
+		transform: scale(1)
+	&__item
+		padding: 0 25px
+		margin-bottom: 20px
+	&__photo
+		display: block
+		border: 7px solid $white
+		border-radius: 50%
+		height: 231px
+		width: 231px
+		margin-bottom: 15px
+	&__name
+		font-size: 18px
+		font-weight: 700
+		color: $white 
+	&__position
+		font-size: 16px
+		font-weight: 400
+		color: $cornflowerBlue
+		margin-bottom: 6px
+	&__soc-icons
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin: 0 -5px
+	&__soc-item
+		padding: 0 5px
+	&__soc-icon
+	 	border: 3px solid $white
+	 	border-radius: 50%
+	 	width: 41px
+	 	display: block
+	 	height: 41px
+	 	line-height: 41px
+	 	.icon-facebook
+	 		fill: $white
+	 		transition: transform 0.5s, fill 0.5s
+	 		&:hover
+	 			transform: rotate(360deg)
+	 			fill: $blue
+	 	.icon-twiter
+	 		fill: $white
+	 		transition: transform 0.5s, fill 0.5s
+	 		&:hover
+	 			transform: rotate(360deg)
+	 			fill: $blue
+	 	.icon-pinterest
+	 		fill: $white
+	 		transition: transform 0.5s, fill 0.5s
+	 		&:hover
+	 			transform: rotate(360deg)
+	 			fill: $blue
+	 	.icon-google
+	 		fill: $white
+	 		transition: transform 0.5s, fill 0.5s
+	 		&:hover
+	 			transform: rotate(360deg)
+	 			fill: $blue

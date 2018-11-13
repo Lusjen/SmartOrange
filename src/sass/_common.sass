@@ -1,0 +1,114 @@
+body
+	font-family: BrandonGrotesque
+	font-size: 18px
+	font-weight: 400
+	+font-smoothing
+
+.inner
+	max-width: 1000px
+	padding: 0 30px 
+	margin: 0 auto
+
+.title-lg
+	font-size: 66px
+	font-weight: 700
+	color: $white
+	letter-spacing: -1.65px
+	text-transform: uppercase
+	+sm
+		font-size: 40px 
+
+.title-md
+	font-size: 60px
+	font-weight: 300
+	color: $white
+	line-height: 0.8
+	+sm
+		font-size: 35px
+	span
+		font-weight: 700 
+
+.title-sm
+	font-size: 32px
+	font-weight: 300
+	color: $white
+	letter-spacing: -0.8px
+	+sm
+		font-size: 22px 
+
+.title-xs
+	font-size: 22px
+	color: $gray
+
+.btn
+	background-color: transparent
+	border: 2px solid white
+	border-radius: 2px
+	padding: 11px 65px 15px
+	font-size: 23px
+	font-family: $BrandonGrotesque
+	color: white
+	font-weight: 700
+	transition: color 2s background-color 2s
+	position: relative
+	overflow: hidden
+	border-radius: 2px
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		left: -20px
+		width: 10px
+		height: 10px
+		background-color: $blue
+		border-radius: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		z-index: -1
+	&:after
+		content: ''
+		position: absolute
+		right: -20px
+		width: 10px
+		height: 10px
+		background-color: $blue
+		border-radius: 50%
+		top: 50%
+		transform: translate(50%, -50%)
+		z-index: -1
+	&:hover:after
+		animation:  criss-cross-right 1s both
+		animation-direction: alternate
+	&:hover:before
+		animation:  criss-cross-left 1s both
+		animation-direction: alternate
+
+
+@keyframes criss-cross-left 
+	0% 
+		left: -20px
+
+	70% 
+	    left: 50%
+	    width: 20px
+	    height: 20px
+
+	100% 
+	    left: 50%
+	    width: 375px
+	    height: 375px
+
+
+@keyframes criss-cross-right 
+	0% 
+		right: -20px
+
+	70% 
+	    right: 50%
+	    width: 20px
+	    height: 20px
+
+	100% 
+	    right: 50%
+	    width: 375px
+	    height: 375px
